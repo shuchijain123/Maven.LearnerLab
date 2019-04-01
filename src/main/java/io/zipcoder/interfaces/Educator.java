@@ -30,6 +30,7 @@ public enum Educator implements Teacher {
 
       learner.Learn(numberOfHours);
 
+      timeWorked +=numberOfHours;
 
   }
 

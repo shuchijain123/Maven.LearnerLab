@@ -61,4 +61,12 @@ public class InstructorTest {
 
 
     }
+
+
+    @Test
+    public void testImplementation(){
+        Instructor instructor = new Instructor(123);
+
+        Assert.assertTrue(instructor instanceof Person);
+    }
 }

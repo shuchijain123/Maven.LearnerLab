@@ -15,7 +15,14 @@ public class ZipCodeWilmington    {
 
         private ZipCodeWilmington(){ }
 
-    Instructor teacher = (Instructor) instructors.findById(id);
+
+    public  void hostLecture(long id, double numberOfHours) {
+
+
+        Instructor teacher = (Instructor) instructors.findById(id);
+
+        teacher.Lecture((Learner[]) students.getArray(), numberOfHours);
+    }
 
 
 
@@ -25,7 +32,6 @@ public class ZipCodeWilmington    {
 
             teacher.Lecture( students.getArray(), numberOfHours);
         }
-
 
 
         public  static ZipCodeWilmington getINSTANCE() {
